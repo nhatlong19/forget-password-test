@@ -1,0 +1,34 @@
+.t-forget {
+    padding: 40px 20px;
+
+    h1 {
+        text-align: center;
+        font-weight: 600;
+        margin-bottom: 30px;
+        color: $green;
+        text-transform: uppercase;
+        @include no-select();
+    }
+
+    &_signin {
+        text-align: end;
+
+        a {
+            text-decoration: none;
+            color: $blue;
+            cursor: pointer;
+            font-size: 14px;
+        }
+    }
+
+    &_button {
+        display: flex;
+        justify-content: center;
+    }
+
+    form {
+        .a-input {
+            margin-bottom: 20px;
+        }
+    }
+}

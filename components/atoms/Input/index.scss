@@ -1,0 +1,62 @@
+.a-input {
+  height: fit-content;
+  position: relative;
+  transition: all 0.5s ease;
+
+  input {
+    height: 32px;
+    font-size: 16px !important;
+
+    &::placeholder {
+      font-size: 14.5px;
+    }
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+      -webkit-box-shadow: 0 0 0 30px #ffffffcf inset !important;
+      -webkit-text-fill-color: #000 !important;
+    }
+  }
+
+  .ant-input-group-addon {
+    padding: 0;
+    button {
+      background-color: $blue;
+    }
+  }
+
+  label {
+    span {
+      margin-left: 6px;
+    }
+  }
+
+  &-error {
+    input {
+      border-color: #f00;
+    }
+
+    label {
+      color: #f00;
+    }
+
+    &_message {
+      color: #f00;
+      font-size: 14px;
+      position: relative;
+    }
+  }
+
+  &-textarea {
+    textarea {
+      resize: vertical !important;
+    }
+  }
+  &-otp {
+    input {
+      height: 50px;
+    }
+  }
+}

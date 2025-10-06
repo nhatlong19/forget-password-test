@@ -1,0 +1,109 @@
+.a-button {
+    height: 40px;
+    width: fit-content;
+    min-width: 80px;
+    border: unset;
+    border-radius: 4px;
+    padding: 6px 12px;
+    cursor: pointer !important;
+    font-size: 16px;
+
+    &-important {
+        font-weight: 600;
+    }
+
+    &-danger {
+        border: 1px solid $red;
+        background-color: $white;
+        color: $red;
+
+        &:hover {
+            background-color: $red;
+            color: $white;
+        }
+    }
+
+    &-primary {
+        border: 1px solid $green;
+        background-color: $white;
+        color: $green;
+
+        &:hover {
+            background-color: $green;
+            color: $white;
+        }
+    }
+
+    &-secondary {
+        border: 1px solid $blue;
+        background-color: $white;
+        color: $blue;
+
+        &:hover {
+            background-color: $blue;
+            color: $white;
+        }
+    }
+
+    &-outline {
+        border: 1px solid $orange;
+        background-color: $white;
+        color: $orange;
+
+        &:hover {
+            background-color: $orange;
+            color: $white;
+        }
+    }
+
+    &-small {
+        height: 32px;
+    }
+
+    &-middle {
+        height: 36px;
+    }
+
+    &-large {
+        height: 44px;
+    }
+
+    &-fill {
+        &.a-button-primary {
+            background-color: $green;
+            color: $white;
+            &:hover{
+                background: $green !important;
+            }
+        }
+
+        &.a-button-secondary {
+            background-color: $blue;
+            color: $white;
+            &:hover{
+                background: $blue !important;
+            }
+        }
+
+        &.a-button-danger {
+            background-color: $red;
+            color: $white;
+            &:hover{
+                background: $red !important;
+            }
+        }
+
+        &.a-button-outline {
+            background-color: $orange;
+            color: $white;
+            &:hover{
+                background: $orange !important;
+            }
+        }
+    }
+
+    &:hover{
+        opacity: 0.8;
+        color: $white !important;
+    }
+}
